@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    
+
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
@@ -11,49 +11,29 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/Start"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/start" />
-
-        <Button
-            android:id="@+id/Stop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stop" />
-        
-         <Button
-            android:id="@+id/Back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Back" />
-         
-    </LinearLayout>
-    
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-         
-          <Button
-            android:id="@+id/Calibration"
+            android:id="@+id/GyroCalibrate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Calibration" />
 
         <Button
-          android:id="@+id/Save"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="@string/Save" />
+            android:id="@+id/Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save" />
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Back" />
 
     </LinearLayout>
-    
+
     <TextView
-        android:id="@+id/MagView"
+        android:id="@+id/GyroView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Magnetic" />
-   
+        android:text="@string/Gyroscope" />
+
 </LinearLayout>

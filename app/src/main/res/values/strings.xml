@@ -15,16 +15,17 @@
     <string name="Count">Count</string>
     <string name="MagCalibration">Mag</string>
     <string name="AccCalibration">Acc</string>
+    <string name="GyroCalibration">Acc</string>
     <string name="Back">Back</string>
     <string name="GPS">GPS</string>
-    
+
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="Calibration">Calibration</string>
     <string name="Record">Record</string>
     <string name="Save">Save</string>
     <string name="Reset">Reset</string>
-    
+
     <string name="button_scan">Scan for devices</string>
     <string name="title_paired_devices">Paired Devices</string>
     <string name="title_other_devices">Other Available Devices</string>
@@ -33,8 +34,7 @@
     <string name="none_paired">No devices have been paired</string>
     <string name="none_found">No devices found</string>
     <string name="connect">Connect a device</string>
-     <string name="discoverable">Make discoverable</string>
-    
-    
+    <string name="discoverable">Make discoverable</string>
+
 
 </resources>

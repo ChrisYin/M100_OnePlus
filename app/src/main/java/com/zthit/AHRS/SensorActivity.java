@@ -219,6 +219,8 @@ public class SensorActivity extends Activity implements SensorEventListener, OnC
         mMagActivity.setOnClickListener(this);
         mAccActivity = (Button) findViewById(R.id.AccCalibration);
         mAccActivity.setOnClickListener(this);
+        mAccActivity = (Button) findViewById(R.id.GyroCalibration);
+        mAccActivity.setOnClickListener(this);
         mResetButton = (Button) findViewById(R.id.Reset);
         mResetButton.setOnClickListener(this);
 
@@ -557,14 +559,14 @@ public class SensorActivity extends Activity implements SensorEventListener, OnC
             StartSensor();
             //mDisplay.setText("Start!");
             //BluetoothConnect();
-            //connect("192.168.1.101", "9090");
-            connect("10.5.5.1","9090");
+            connect("192.168.1.101", "9090");
+            //connect("10.5.5.1","9090");
             if (!thread_status) {
                 //线程如果没有start则启动线程
                 attiudeThread.start();          //启动线程但是还没有执行姿态算法
                 thread_status = true;
             }
-            mLocation.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+            //mLocation.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 
         }
         if (v.getId() == R.id.Disconnect) {
@@ -593,6 +595,12 @@ public class SensorActivity extends Activity implements SensorEventListener, OnC
         if (v.getId() == R.id.AccCalibration) {
             Intent intent = new Intent();
             intent.setClass(SensorActivity.this, AccActivity.class);
+            SensorActivity.this.startActivity(intent);
+            SensorActivity.this.finish();
+        }
+        if (v.getId() == R.id.GyroCalibration) {
+            Intent intent = new Intent();
+            intent.setClass(SensorActivity.this, GyroActivity.class);
             SensorActivity.this.startActivity(intent);
             SensorActivity.this.finish();
         }

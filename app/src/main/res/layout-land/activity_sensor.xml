@@ -185,6 +185,18 @@
         android:layout_marginRight="11dp"
         android:layout_marginEnd="11dp" />
 
+    <Button
+        android:id="@+id/GyroCalibration"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:text="Gyro" />
+
     <TextView
         android:id="@+id/height"
         android:layout_width="wrap_content"

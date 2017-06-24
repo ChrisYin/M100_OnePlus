@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 18
+    compileSdkVersion 23
     buildToolsVersion "26.0.0"
 
     defaultConfig {
         applicationId "com.zthit.AHRS1"
         minSdkVersion 14
-        targetSdkVersion 18
+        targetSdkVersion 23
     }
 
     buildTypes {
@@ -19,9 +19,11 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:18.0.0'
     compile files('libs/eventbus.jar')
     compile files('libs/butterknife-7.0.1.jar')
     compile files('libs/java_websocket.jar')
     compile files('libs/json-simple-1.1.jar')
+    compile 'com.android.support:support-v4:23.0.0'
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
 }

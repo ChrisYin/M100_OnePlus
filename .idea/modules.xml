@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OnePlus_M100.iml" filepath="$PROJECT_DIR$/OnePlus_M100.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M100_OnePlus.iml" filepath="$PROJECT_DIR$/M100_OnePlus.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oneplus.iml" filepath="$PROJECT_DIR$/oneplus.iml" />
     </modules>
   </component>
 </project>
