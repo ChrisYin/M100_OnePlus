@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zthit.AHRS"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+    <uses-permission 
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission 
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission 
+        android:name="android.permission.INTERNET" />
+    <uses-permission 
+        android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission 
+        android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission 
+        android:name="android.permission.BLUETOOTH" />
+	<uses-permission 
+	    android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".RCApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.zthit.AHRS.SensorActivity"
+            android:label="@string/app_name"           
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.zthit.AHRS.MagActivity"
+            android:theme="@android:style/Theme.Black"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity 
+            android:name="com.zthit.AHRS.AccActivity"
+            android:theme="@android:style/Theme.Black"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity 
+            android:name="com.zthit.AHRS.DeviceListActivity"
+            android:label="@string/select_device"
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="orientation|keyboardHidden" >
+        </activity>
+    </application>
+
+</manifest>
