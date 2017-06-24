@@ -43,5 +43,4 @@ public class GyroActivity extends Activity implements View.OnClickListener {
             Magview.setText("Saving data Successfully !");
         }
     }
-
 }
